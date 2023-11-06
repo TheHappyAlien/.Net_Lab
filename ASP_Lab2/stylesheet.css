@@ -1,0 +1,31 @@
+body {
+    background-color: wheat;
+}
+
+th, td{
+    border: 1px solid navy; 
+}
+
+table{
+    border: 3px solid black;
+}
+
+table, th, td{
+    background-color: lightgray;
+}
+
+.article_container{
+    background-color: darkcyan;
+    text-align: center;
+    color: wheat;
+}
+
+form{
+    background-color: darkslategrey;
+    border: 2px solid blue;
+    width: fit-content;
+}
+
+form > p, h3{
+    color: white;
+}

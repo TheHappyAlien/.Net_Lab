@@ -1,0 +1,27 @@
+.multiplication-tab th, td{
+    border-radius: 2px;
+    border: 1px solid black;
+}
+.multiplication-tab th{
+    background-color: rgb(83, 83, 83);
+    color: white;
+}
+
+.mod-zero {
+    background-color: rgb(240, 232, 131);
+}
+
+.mod-one {
+    background-color: rgb(134, 172, 236);
+}
+
+
+.mod-two {
+    background-color: red;
+}
+
+.fixed-canvas {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}

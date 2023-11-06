@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Rozwiązanie 2. zadania na zajęcia labolatoryjne z kursu o .Net ">
+    <meta name="author" content="Aleksander Musz">
+    <meta name="keywords" content="HTML, Lab, PWR">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="normal">
+    <meta http-equiv="default-style" content="stylesheet.css">
+    <meta http-equiv="refresh" content="120">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Fancy document</title>
+</head>
+<body>
+    <div id="content">
+
+        <h1 id="top">How to use new and interesting html elements:</h1>
+        <p>You can for example &quot;<em>emphesize</em>&quot; your quotes. Make <strong>STRONG</strong> points, or shrink your text by ---&gt;<small>squishing</small>&lt;--- it.</p>
+
+        <a href="#articles"><p>Go to articles</p></a>
+        <a href="#form"><p>Go to form</p></a>
+
+        <ul>
+            <li>You can also fix errors in your page. Go to <a href="https://productiveshop.com/http-error-301-moved-permanently/"><del>this</del></a>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/address"><ins>&apos;this&apos;</ins></a> page, to find more.
+            </li>
+            <li>You can make lists inside lists, an &ac; ammount of them!</li>
+            <li>And you can change their styles however you want</li>
+            <li><ol type="I">
+                <li>Or<sub>this</sub><sup>one</sup></li>
+                <li>.</li>
+                <li>.</li>
+                <li><ol>
+                    <li>Or this one</li>
+                    <li>.</li>
+                    <li>.</li>
+                    <li><ul style="list-style-type:square;">
+                        <li>Such as this one.</li>
+                        <li>.</li>
+                        <li>.</li>                                
+                    </ul></li>                            
+                </ol></li>
+            </ol></li>
+        </ul>
+
+        <article class="article_container" id="articles">
+            <h2>You can make different articles</h2>
+            <article class="article">
+                <h3>article1</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum ex incidunt nam molestiae est ipsum itaque temporibus quas inventore perferendis deserunt, obcaecati consectetur nihil beatae saepe ea excepturi eum consequatur soluta cumque vero. Nulla recusandae atque, odit alias veritatis voluptatem sequi, debitis placeat explicabo voluptates, animi excepturi ad quas. Fuga soluta quae ab quam eaque dolorum in necessitatibus pariatur, sunt, assumenda delectus perferendis sit ducimus sequi, rem commodi tempora veniam voluptate sed modi nostrum aperiam ullam vel. Voluptate repellat, maiores voluptas atque ut at quibusdam molestiae minus aliquam enim, ipsum dolore illo voluptatum consectetur laborum amet reprehenderit, saepe vero accusantium.</p>
+            </article>
+            <article class="article">
+                <h3>article2</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum ex incidunt nam molestiae est ipsum itaque temporibus quas inventore perferendis deserunt, obcaecati consectetur nihil beatae saepe ea excepturi eum consequatur soluta cumque vero. Nulla recusandae atque, odit alias veritatis voluptatem sequi, debitis placeat explicabo voluptates, animi excepturi ad quas. Fuga soluta quae ab quam eaque dolorum in necessitatibus pariatur, sunt, assumenda delectus perferendis sit ducimus sequi, rem commodi tempora veniam voluptate sed modi nostrum aperiam ullam vel. Voluptate repellat, maiores voluptas atque ut at quibusdam molestiae minus aliquam enim, ipsum dolore illo voluptatum consectetur laborum amet reprehenderit, saepe vero accusantium.</p>
+            </article>   
+            <aside>You can also add side notes to your page.</aside> 
+        </article>
+
+        <dl>
+            <dt>Thing</dt>
+            <dd>Thing definition</dd>
+            <dt>Another thing</dt>
+            <dd>Another thing definition</dd>
+        </dl>
+
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="5">You can make amazing tables</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td colspan="3" rowspan="3">A big datapoint</td>
+                    <td>B4</td>
+                    <td>B5</td>
+                </tr>
+                <tr>
+                    <td>C4</td>
+                    <td>C5</td>
+                </tr>
+                <tr>
+                    <td colspan="2">smaller datapoint</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>            
+                    <td>E1</td>
+                    <td>E2</td>
+                    <td>E3</td>
+                    <th colspan="2">result</th>
+                </tr>
+            </tfoot>
+        </table>
+
+        <table>
+            <tbody>
+                <tr>
+                    <td>A</td>
+                    <td>B</td>
+                    <td colspan="3" rowspan="2"><img src="car.jpg" alt="Car image" width="150" height="150"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">Tekst</td>
+                </tr>
+                <tr>
+                    <td>C</td>
+                    <td>D</td>
+                    <td>E</td>
+                    <td>F</td>
+                    <td>G</td>
+                </tr>
+                <tr>
+                    <td>H</td>
+                    <td colspan="3"><a href="https://www.google.com/" target="_blank"><p>Google</p></a></td>
+                    <td>I</td>
+                </tr>
+                <tr>
+                    <td>J</td>
+                    <td>K</td>
+                    <td>L</td>                                
+                    <td colspan="2">1&amp;0</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>Or maybe you want to make <strong>GREAT</strong> forms.</p>
+        
+        <form method="post" action="http://localhost:5500/SimpleForm.html" id="form">
+            
+            <h3>FORM:</h3>
+
+            <p>
+                <label for="Color">Pick a color:</label>
+                <input id="Color" name="Color" type="color">
+            </p>
+
+            <p>
+                <label for="given-name">Name:</label>
+                <input id="given-name" name="given-name" placeholder="Name" type="text" size="30" maxlength="50" autocomplete="given-name">
+            </p>
+            
+            <p>
+                <label for="family-name">Surname:</label>
+                <input id="family-name" name="family-name" placeholder="Surname" type="text" size="30" maxlength="50" autocomplete="family-name">
+            </p>
+
+            <p>
+                <label for="Date">Date:</label>
+                <input id="Date" name="Date" type="date">
+            </p>
+            <p>
+                <label>Month:</label>
+                <input id="Month" name="Month" type="month">
+            </p>
+            <p>
+                <label>Week:</label>
+                <input id="Week" name="Week" type="week">
+            </p>        
+            <p>
+                <label>Time:</label>
+                <input id="Time" name="Time" type="time">
+            </p>
+
+                
+            <p>
+                <label>Choose one:</label>
+                <label><input name="choose_one" type="radio" value="choice_1" checked>1</label>
+                <label><input name="choose_one" type="radio" value="choice_2">2</label>
+                <label><input name="choose_one" type="radio" value="choice_3">3</label>
+                <label><input name="choose_one" type="radio" value="choice_4">4</label>
+            </p>
+
+            <p>
+                <label>Choose any:</label>
+                <label><input name="choose_any" type="checkbox" value="choice_1">1</label>
+                <label><input name="choose_any" type="checkbox" value="choice_2">2</label>
+                <label><input name="choose_any" type="checkbox" value="choice_3">3</label>
+            </p>
+
+            <p>
+                <label>Pick an option:
+                <select name="pick_option">
+                    <option value="house_1">Mojo</option>
+                    <option value="house_2">Dojo</option>
+                    <option value="house_3">Casa</option>
+                    <option value="house_4">House</option>
+                </select>
+                </label>
+            </p>
+
+            <p>
+                <label for="option_choice">Choose a flover:</label>
+                <input list="options" id="option_choice" name="option_choice" placeholder="pick an options">
+                <datalist id="options">
+                    <option value="Fancy option"></option>
+                    <option value="Not so fancy option"></option>
+                    <option value="Look ma, more options"></option>
+                    <option value="Im tired of writing more options"></option>
+                    <option value="The greatest option"></option>
+                </datalist>
+            </p>
+
+            <p>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Clear">
+            </p>
+        </form>
+
+        <figure>
+            <img src="pudzian.jpg" alt="Pudzian" width="200" height="300">
+            <figcaption>Mariusz pudzianowski</figcaption>
+        </figure>
+
+        <a href="#top"><p>Back to the top</p></a>
+    </div>
+</body>
+</html>

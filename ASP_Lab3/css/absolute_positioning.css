@@ -1,0 +1,257 @@
+
+/*Background*/
+.background-text{
+    color: rgb(255, 255, 255, 0.2);
+    font-family: monospace;
+    text-align: left;
+    margin: 0 5%;
+    transition: opacity 600ms ease;
+}
+
+/*#region Cards default */
+.cards-container{
+    position: fixed;
+    
+    height: 160px;
+    width: 90px;
+
+    left: 50vw;
+    top: 80vh;
+
+    transform: translate(-50%, -50%);
+}
+
+.cards-container > p{
+    position: absolute;
+
+    top: 90%;
+    text-transform: uppercase;
+    font-weight: 100;
+    font-stretch: extra-expanded;
+    padding-top: 15%;
+
+    color: rgb(255, 255, 255, 0.5);
+
+    transition: color 600ms ease;
+}
+
+.image-container{
+    position: absolute;
+    
+    height: 160px;
+    width: 90px;
+
+    border-radius: 10%;
+    overflow: hidden;
+}
+
+.image-container > img{
+    position: absolute;
+
+    left: 0;
+    top: 0;
+
+    transform: translateX(-25%);
+}
+
+.image1{
+
+    position: absolute;
+    left: 0;
+    top: -10%;
+    transform: rotate(5deg);
+    z-index: 1;
+    transition: all 600ms ease;
+}
+
+.image2{
+    position: absolute;
+
+    left: 0;
+    top: -10%;
+    transform: rotate(-15deg);
+    z-index: 2;
+    transition: all 600ms ease; 
+}
+
+.image3{
+    position: absolute;
+    left: -30%;
+    top: 0;
+    transform: rotate(-30deg);
+    z-index: 3;
+    transition: all 600ms ease;
+}
+.image4{
+    position: absolute;
+    left: 20%;
+    top: 0%;
+    transform: rotate(10deg); 
+    z-index: 4;
+    transition: all 600ms ease; 
+}
+.image5{
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: rotate(-5deg);
+    z-index: 5;
+    transition: all 600ms ease;
+}
+
+.image-container::before{
+    content: "";
+    display: block;
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    height: 100%;
+    width: 100%;
+
+    background-color: rgb(0,0,0,0.4);
+    z-index: 10;
+    transition: all 600ms ease;
+}
+
+/*#endregion*/
+
+/*#region Cards hover*/
+.cards-container:hover .image1{
+    left: 70%;
+    top: -140%;
+    transform: rotate(15deg);
+}
+.cards-container:hover .image2{
+    left: -80%;
+    top: -100%;
+    transform: rotate(-20deg);
+}
+.cards-container:hover .image3{
+    left: -90%;
+    top: -50%;
+    transform: rotate(-30deg);
+}
+.cards-container:hover .image4{
+    left: 80%;
+    top: -60%;
+    transform: rotate(25deg);
+}
+.cards-container:hover .image5{
+    left: 10%;
+    top: -100%;
+    transform: rotate(5deg);
+}
+
+.cards-container:hover .image-container::before{
+    background-color: transparent;
+}
+
+.cards-container:hover > p{
+    color: white;
+}
+/*#endregion*/
+
+/*#region Switch Container*/
+.switch-container:has(input) + .cards-container{
+    top: 200vh;
+    opacity: 0%;
+    transition: opacity 600ms linear;
+}
+.switch-container:has(input:checked) + .cards-container{
+    opacity: 100%;
+    top: 80vh;
+}
+
+.switch-container > p{
+    position: absolute;
+
+    width: 50vw;
+    text-align: left;
+    
+    top: -50%;
+    left: calc(100% + 30px);
+
+    opacity: 0%;
+
+    transition: opacity 500ms ease;
+
+    text-transform: uppercase;
+    font-family: monospace;
+}
+.switch-container:has(.switch:hover) > p {
+    opacity: 100%;
+}
+.switch-container:has(.switch > input:checked) > p{
+    opacity: 0%;
+}
+
+body:has(.switch > input:checked) > .background-text{
+    opacity: 0;
+}
+/*#endregion*/
+
+/*#region Switch*/
+.switch-container{
+    position: fixed;
+    width: 40px;
+    height: 20px;
+    bottom: 10px;
+    display: inline-block;
+    transform: translate(-100%, -50%);
+}
+.switch {
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    opacity: 50%;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+
+    border-radius: 20px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+
+  border-radius: 50%;  
+}
+
+.switch input:checked + .slider {
+    background-color: #85d492;
+}
+
+.switch input:checked + .slider:before {
+    -webkit-transform: translateX(14px);
+    -ms-transform: translateX(14px);
+    transform: translateX(14px);
+}
+
+.switch:has(input:checked){
+    opacity: 100%;
+}
+/*#endregion*/

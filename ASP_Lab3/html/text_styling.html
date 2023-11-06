@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/navBar.css" type="text/css">
+    <link rel="stylesheet" href="../css/text_styling.css" type="text/css">
+    <title>STYLING TEXT</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <p class="page-name-label">Text styling</p>
+        <nav>
+          <ul>
+            <li>
+              <a href="main.html">Home</a>
+            </li>
+            <li class="menu">
+              Menu
+              <ul>
+                <li>
+                  <a href="text_styling.html">styling text</a>
+                </li>
+                <li>something</li>
+                <li>
+                  <a href="absolute_positioning.html">absolute positioning</a>
+                </li>
+                <li class="submenu">
+                  Submenu
+                  <ul>
+                    <li>
+                      <a href="tables.html">Tables</a>
+                    </li>
+                    <li>
+                      <a href="cat_cover.html">Cover background</a>
+                    </li>
+                    <li>
+                      <a href="cat_contain.html">Contain background</a>
+                    </li>
+                    <li>
+                      <a href="cat_stretch.html">Stretch background</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <h1>Styling text</h1>
+    <h2>By using different units to set the font size, we can achieve different results, for example this text will be twice as large, as regular text on this page</h2>
+    <h3>We can also scale the size of our text relative to the parent element text size:</h3>
+    <div class="relative-sizing-container">
+      <p>200% font size</p>
+      <p class="relative-sizing-example big-percent">Relative size</p>
+      <p>2em font size</p>
+      <p class="relative-sizing-example big-em">Relative size</p>
+      <p>100% font size</p>
+      <p class="relative-sizing-example medium-percent">Relative size</p>
+      <p>1em font size</p>
+      <p class="relative-sizing-example medium-em">Relative size</p>
+      <p>50% font size</p>
+      <p class="relative-sizing-example small-percent">Relative size</p>
+      <p>0.5em font size</p>
+      <p class="relative-sizing-example small-em">Relative size</p>
+    </div>
+    <h3>Or we can fix the text size, if for example we want to keep the ratio between an image and it's caption irrespective of the font size chosen.</h3>
+    <p>Switch font size below:</p>
+    <div class="fixed-example-container">
+      <label class="switch">
+        <input type="checkbox">
+        <span class="slider"></span>
+      </label>
+      <p>0.75em</p>
+      <figure class="animation-figure-em-big">
+        <div class="animation-container">
+          <img src="../Animation.gif" alt="A swordfighter GIF">
+        </div>
+        <figcaption>This animation is contained inside a 48x48 pixel square.</figcaption>
+      </figure>
+      <p class="fixed-label">12px</p>
+      <figure class="animation-figure-px">
+        <div class="animation-container">
+          <img src="../Animation.gif" alt="A swordfighter GIF">
+        </div>
+        <figcaption>This animation is contained inside a 48x48 pixel square.</figcaption>
+      </figure>
+      <p class="fixed-label">9pt</p>
+      <figure class="animation-figure-pt">
+        <div class="animation-container">
+          <img src="../Animation.gif" alt="A swordfighter GIF">
+        </div>
+        <figcaption>This animation is contained inside a 48x48 pixel square.</figcaption>
+      </figure>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+body {
+    margin: 0;
+    font-family: 'Work Sans', sans-serif, monospace;
+    font-weight: 300;
+    
+    color: rgba(213, 231, 222, 0.8);
+
+    background: rgb(30,30,30);
+
+    background-image: linear-gradient(
+        rgb(255,255,255, 0.3), rgb(30,30,30)
+    );
+    
+    background-position: 0 0;
+    background-size: 100vw 120vh;
+    background-repeat: no-repeat;
+}
+
+p::selection{
+    color: darkblue;
+    background-color: transparent;
+}
+

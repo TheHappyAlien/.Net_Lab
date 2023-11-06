@@ -1,0 +1,25 @@
+a:link, a:visited {
+    text-decoration: none;
+    color: darkslategray;
+    font-size: 150%;
+    text-align: center
+}
+
+a:hover {
+    opacity: 60%;
+}
+
+a:active {
+    opacity: 20%;
+}
+
+.Links i{
+    background-color: blue;
+}
+
+h3 {
+    border: 2px solid green;
+    text-align: center;
+    color: white;
+    background-color: black;
+}

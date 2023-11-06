@@ -1,0 +1,218 @@
+body {
+    margin: 0;
+    font-family: 'Work Sans', sans-serif, monospace;
+    font-weight: 300;
+    
+    color: rgba(213, 231, 222, 0.8);
+
+    background: rgb(30,30,30);
+    
+    background-position: 0 0;
+    background-size: 100vw 150vh;
+    background-repeat: no-repeat;
+
+    text-align: center;
+}
+
+h1, h2, p {
+    padding: 0 5vw;
+}
+
+/*#region h1 (banner)*/
+h1 {
+    position: relative;
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: fit-content;
+
+    text-align: center;
+    font-weight: normal;
+    font-size: clamp(10em, 15vw, 20em);
+    text-transform: uppercase;
+
+    background-image: linear-gradient(to right, rgb(165, 228, 107), rgb(94, 178, 226), rgb(165, 228, 107));
+    background-size: 200% 100%;
+
+    background-position: 0 0;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    color: transparent;
+
+    padding: 0 5vw;
+    transition: background-position 800ms linear;
+
+    margin-bottom: 2em;
+
+}
+
+h1:hover {
+    background-position: 100% 0%;
+}
+/*#endregion*/
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 25%;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 2em;
+}
+
+
+/*#region relative size */
+.relative-sizing-container{
+    position: relative;
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 50vw;
+    text-align: center;
+}
+
+.relative-sizing-example{
+    position: relative;
+    text-align: center;
+
+    padding: 5px;
+
+    width: fit-content;
+    height: fit-content;
+    
+    left: calc(50%);
+    transform: translateX(-50%);
+
+    text-transform: uppercase;
+    text-decoration: underline rgba(214, 218, 26, 0.692);
+    font-size: 100%;
+    font-weight: 100;
+    font-stretch: extra-expanded;
+    color: rgba(255,255,255,0.6);
+
+    border: 1px solid white;
+
+    margin-top: 0;
+    margin-bottom: 5vh;
+}
+
+.big-percent{
+    font-size: 200%
+}
+.big-em{
+    font-size: 2em
+}
+.medium-percent{
+    font-size: 100%
+}
+.medium-em{
+    font-size: 1em
+}
+.small-percent{
+    font-size: 50%
+}
+.small-em{
+    font-size: 0.5em
+}
+/*#endregion*/
+
+/*#region fixed size */
+.fixed-example-container > p{
+    margin-top: 50px;
+}
+
+.fixed-label{
+    font-size: 1rem;
+}
+
+.fixed-example-container{
+    font-size: 1rem;
+}
+
+.fixed-example-container:has(input:checked){
+    font-size: 2rem;
+}
+
+.animation-container{
+    position: relative;
+
+    left: calc(50% - 24px);
+    height: 48px;
+    width: 48px;
+
+    border: 1px dashed white;
+    margin: 10px 0;
+
+    text-align: center;
+}
+
+.animation-figure-em-big{
+    font-size: 0.75em;
+}
+
+.animation-figure-px{
+    font-size: 12px;
+}
+
+.animation-figure-pt{
+    font-size: 9pt;
+}
+/*#endregion*/
+
+/*#region switch*/
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    margin-bottom: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+
+    border-radius: 20px;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+
+  border-radius: 50%;  
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(14px);
+    -ms-transform: translateX(14px);
+    transform: translateX(14px);
+}
+/*#endregion*/
